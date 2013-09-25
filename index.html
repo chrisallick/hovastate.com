@@ -25,6 +25,18 @@
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
         <script src='./js/main.js' type='text/javascript'></script>
         <script src='./js/GifLoader.js' type='text/javascript'></script>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-44343826-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     </head>
     <body>
         <div id="header">
@@ -37,7 +49,7 @@
                 return false;"></a>
                 <a class="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=hovastate.com','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());"></a>
             </div>
-            
+
             <div id="buttons" class="clear">
                 <a href="javascript:var s=document.createElement('link');s.rel='stylesheet';s.type='text/css';s.href='https://hovastate.s3.amazonaws.com/hova.css';document.body.appendChild(s);void(0);" title="Drag me to your browser toolbar!" class="button bookmarklet">HOVA</a>
                 <a href="#" class="button chrome"></a>
