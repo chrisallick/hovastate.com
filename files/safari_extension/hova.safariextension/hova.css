@@ -1,0 +1,2 @@
+a:hover { cursor: url('https://hovastate.s3.amazonaws.com/hova.png'), -moz-zoom-in !important; }
+a *:hover { cursor: url('https://hovastate.s3.amazonaws.com/hova.png'), -moz-zoom-in !important; }

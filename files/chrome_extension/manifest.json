@@ -1,0 +1,16 @@
+{
+  "name": "Hov!",
+  "description": "desc",
+  "version": "2.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    //"all_frames": true,
+    "matches": ["http://*/*", "https://*/*"],
+    //"js": ["jq.min.js", "hova.js"]
+    "css": ["hova.css"]
+    //"run_at": "document_end"
+  }],
+  "web_accessible_resources": [
+    "hova.png"
+  ]
+}
