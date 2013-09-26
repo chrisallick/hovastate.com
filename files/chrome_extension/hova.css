@@ -1,2 +1,14 @@
-a:hover { cursor: url('https://hovastate.s3.amazonaws.com/hova.png') 24 1, default !important; }
-a *:hover { cursor: url('https://hovastate.s3.amazonaws.com/hova.png') 24 1, default !important; }
+a:hover {
+	cursor: url('https://hovastate.s3.amazonaws.com/hova.png') 24 1, default !important;
+	cursor: -webkit-image-set(
+		url('https://hovastate.s3.amazonaws.com/hova.png') 1x,
+		url('https://hovastate.s3.amazonaws.com/hova.2x.png') 2x
+	) 24 1, default !important;
+}
+a *:hover {
+	cursor: url('https://hovastate.s3.amazonaws.com/hova.png') 24 1, default !important;
+	cursor: -webkit-image-set(
+		url('https://hovastate.s3.amazonaws.com/hova.png') 1x,
+		url('https://hovastate.s3.amazonaws.com/hova.2x.png') 2x
+	) 24 1, default !important;
+}
