@@ -50,4 +50,4 @@ html, body { width: 100%; height: 100%; background-color: #2D2D2D; }
 
 .arrow { display: block; width: 44px; height: 20px; margin: 0 auto; }
 
-#video { width: 640px; height: 360px; margin: 0 auto; display: block; margin-top: 50px;  }
+#player { width: 640px; height: 360px; margin: 0 auto; display: block; margin-top: 50px;  }

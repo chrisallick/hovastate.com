@@ -1,5 +1,25 @@
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('player', {
+  		height: '390',
+  		width: '640',
+  		videoId: 'nmIHy6-wZus',
+  		events: {
+    		'onReady': onPlayerReady,
+    		'onStateChange': onPlayerStateChange
+  		}
+	});
+}
 
-var gl;
+function onPlayerReady(event) {
+	//event.target.playVideo();
+	ready = true;
+}
+
+function onPlayerStateChange(event) {
+
+}
+
+var gl, player, ready = false;
 $(document).ready(function() {
 	gl = new GifLoader();
 
@@ -10,6 +30,16 @@ $(document).ready(function() {
 
 		$("html,body").animate({
 			scrollTop: $(document).height()
-		})
+		}, function() {
+			if( ready ) {
+				player.playVideo();
+			}
+		});
 	});
+
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 });
