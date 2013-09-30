@@ -41,4 +41,41 @@ $(document).ready(function() {
 	tag.src = "https://www.youtube.com/iframe_api";
 	var firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	$("#buttons .bookmarklet").mouseover('fast', function(){
+		$("#tips .drag").animate({
+			opacity: 1,
+			bottom: "-58px"
+		});
+	}).mouseout('100', function(){
+		$("#tips .drag").animate({
+			opacity: 0,
+			bottom: "-50px"
+		});
+	});
+
+	$("#buttons .chrome").mouseover('fast', function(){
+		$("#tips .install-chrome").animate({
+			opacity: 1,
+			bottom: "-58px"
+		});
+	}).mouseout('100', function(){
+		$("#tips .install-chrome").animate({
+			opacity: 0,
+			bottom: "-50px"
+		});
+	});
+
+	$("#buttons .safari").mouseover('fast', function(){
+		$("#tips .install-safari").animate({
+			opacity: 1,
+			bottom: "-58px"
+		});
+	}).mouseout('100', function(){
+		$("#tips .install-safari").animate({
+			opacity: 0,
+			bottom: "-50px"
+		});
+	});
+
 });
