@@ -43,7 +43,7 @@ $(document).ready(function() {
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 	$("#buttons .bookmarklet").mouseover('fast', function(){
-		$("#tips .drag").animate({
+		$("#tips .drag").show().animate({
 			opacity: 1,
 			bottom: "-58px"
 		});
@@ -51,11 +51,13 @@ $(document).ready(function() {
 		$("#tips .drag").animate({
 			opacity: 0,
 			bottom: "-50px"
+		}, function(){
+			$(this).hide();
 		});
 	});
 
 	$("#buttons .chrome").mouseover('fast', function(){
-		$("#tips .install-chrome").animate({
+		$("#tips .install-chrome").show().animate({
 			opacity: 1,
 			bottom: "-58px"
 		});
@@ -63,11 +65,13 @@ $(document).ready(function() {
 		$("#tips .install-chrome").animate({
 			opacity: 0,
 			bottom: "-50px"
+		}, function() {
+			$(this).hide();
 		});
 	});
 
 	$("#buttons .safari").mouseover('fast', function(){
-		$("#tips .install-safari").animate({
+		$("#tips .install-safari").show().animate({
 			opacity: 1,
 			bottom: "-58px"
 		});
@@ -75,6 +79,8 @@ $(document).ready(function() {
 		$("#tips .install-safari").animate({
 			opacity: 0,
 			bottom: "-50px"
+		}, function(){
+			$(this).hide();
 		});
 	});
 

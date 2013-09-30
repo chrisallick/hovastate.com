@@ -23,9 +23,9 @@ html, body { width: 100%; height: 100%; background-color: #2E2D2F; }
 #buttons .last { margin-right: 0px; }
 
 #tips { position: absolute; bottom: 0px; left: 0px; }
-#tips .drag { width: 222px; height: 39px; position: absolute; bottom: -50px; left: -10px; opacity: 0; }
-#tips .install-chrome { width: 107px; height: 39px; position: absolute; bottom: -50px; left: 264px; opacity: 0; }
-#tips .install-safari { width: 107px; height: 39px; position: absolute; bottom: -50px; left: 479px; opacity: 0; }
+#tips .drag { width: 222px; height: 39px; position: absolute; bottom: -50px; left: -10px; opacity: 0; display: none; }
+#tips .install-chrome { width: 107px; height: 39px; position: absolute; bottom: -50px; left: 264px; opacity: 0; display: none; }
+#tips .install-safari { width: 107px; height: 39px; position: absolute; bottom: -50px; left: 479px; opacity: 0; display: none; }
 
 #social { position: fixed; top: 12px; left: 10px; width: 200px; height: 54px; }
 #social a { width: 32px; height: 32px; float: left;  }
