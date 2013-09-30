@@ -48,6 +48,6 @@ html, body { width: 100%; height: 100%; background-color: #2E2D2F; }
 #title { width: 100%; text-align: center; margin-bottom: 30px; }
 #title img { width: 500px; height: 25px; }
 
-.arrow { display: block; width: 44px; height: 20px; margin: 0 auto; }
+.info { display: block; width: 428px; height: 144px; margin: 0 auto; }
 
-#player { width: 640px; height: 360px; margin: 0 auto; display: block; margin-top: 50px;  }
+#player { width: 640px; height: 360px; margin: 0 auto; display: block; margin-top: 30px;  }
